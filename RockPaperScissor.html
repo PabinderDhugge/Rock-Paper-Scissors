@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body>
+        <header><h1>Rock Paper Scissors</h1></header>
+        <div class="score">    
+            <span id="playerScore">0</span>:<span id="computerScore">0</span>
+            <div class="player">Player</div>
+            <div class="computer">Computer</div>
+        </div>
+        <span class="rock">
+            <img src="images/Rock.png" id="rock" alt="Rock" class="img">
+        </span>
+        <span class="paper">
+            <img src="images/Paper.png" id="paper" alt="Paper" class="img"> 
+        </span>
+        <span class="scissor">
+            <img src="images/Scissors.png" id="scissor" alt="Scissors" class="img">
+        </span>
+        <div class="radio">
+            <input name="game" type="radio" value="Rock" id="radRock">
+            <input name="game" type="radio" value="Paper" id="radPaper">
+            <input name="game" type="radio" value="Scissor" id="radScissor">
+        </div>
+
+        <input onClick="rockPaperScissor()" type="button" value="Rock Paper Scissors Go!!!">
+        <div id="compChoice"></div>
+        <div id="result"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+        
